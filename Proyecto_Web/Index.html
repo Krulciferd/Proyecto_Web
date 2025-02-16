@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Videojuegos</title>
+    <style>
+        .carousel {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .carousel-inner {
+            display: flex;
+            width: 300%;
+            animation: slide 6s infinite;
+        }
+        .carousel img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0%, 100% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="Imagenes/Imagen1.png" alt="Imagen 1">
+            <img src="Imagenes/Imagen2.png" alt="Imagen 2">
+            <img src="Imagenes/Imagen3.png" alt="Imagen 3">
+        </div>
+    </div>
+</body>
+</html>
