@@ -8,10 +8,13 @@
         .header{
             display: flex;
             justify-content:space-between;
-            align-items:center;
             background-color: black;
             padding: 10px;
+            margin: 0px;
             width: 100%;
+            position: fixed;
+            z-index: 10;
+            top: 0;
             
         }
         .logo{
@@ -28,7 +31,7 @@
         
             padding: 10px;
             display: flex;
-            gap: 15px;
+            gap: 10px;
             justify-content: flex-start;
             align-items: center;
             list-style: none;
@@ -52,7 +55,7 @@
             background-color: black;
             text-align: center;
             padding: 10px;
-            
+            padding-top: 100px;
         }
 
     </style>
@@ -67,8 +70,12 @@
                     <a href="#">Inicio</a>
                     <a href="#">Categorias</a>
                     <a href="#">Consolas</a>
-                    <a href="#">Ubicación</a>
-                    <a href="#">Contactos</a>
+                    <a href="#">
+                        <img src="Imagenes/ubicación.png" alt="ubicacion" width="24" height="24">
+                    </a>
+                    <a href="#">
+                        <img src="Imagenes/telefono.png" alt="telefono" width="24" height="24">
+                    </a>
             </nav>
 
     </header>
@@ -93,14 +100,14 @@
                 <div style="text-align: center; flex: 1;">
                     <img src="Imagenes/Imagen1.png" alt="" style="width: 300px; height: 300px; border-radius: 10%; background-color: gold; padding: 2%; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);">
                     <h3 style="font-size: 16px; color: white; font-family: 'Times New Roman', Times, serif; padding: 10px 20px; border-radius: 10px; background-color: gold;">Game of Thrones</h3>
-                    <p style="font-size: 18px; font-weight: bold;">$500</p>
+                    <p style="font-size: 18px; font-weight: bold;color: white;">$500</p>
                     <a href="#" style="background-color: gold; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; transition: 0.3s;">Comprar</a>
                 </div>
             
                 <div style="text-align: center; flex: 1;">
                     <img src="Imagenes/Imagen2.png" alt="" style="width: 300px; height: 300px; border-radius: 10%; background-color: gold; padding: 2%; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);">
                     <h3 style="font-size: 16px; color: white; font-family: 'Times New Roman', Times, serif; padding: 10px 20px; border-radius: 10px; background-color: gold;">Carreras</h3>
-                    <p style="font-size: 18px; font-weight: bold;">$500</p>
+                    <p style="font-size: 18px; font-weight: bold;color: white;">$500</p>
                     <a href="#" style="background-color: gold; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; transition: 0.3s;">Comprar</a>
                 </div>
             
@@ -108,7 +115,7 @@
                 <div style="text-align: center; flex: 1;">
                     <img src="Imagenes/Imagen3.png" alt="" style="width: 300px; height: 300px; border-radius: 10%; background-color: gold; padding: 2%; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);">
                     <h3 style="font-size: 16px; color: white; font-family: 'Times New Roman', Times, serif; padding: 10px 20px; border-radius: 10px; background-color: gold;">Juego Espacial</h3>
-                    <p style="font-size: 18px; font-weight: bold;">$500</p>
+                    <p style="font-size: 18px; font-weight: bold;color: white;">$500</p>
                     <a href="#" style="background-color: gold; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; transition: 0.3s;">Comprar</a>
                 </div>
             </div>
@@ -122,7 +129,7 @@
                         <img src="Imagenes/Imagen3.png" alt="Imagen 3" style="width: 300px; height: 300px; border-radius: 10%; background-color: gold; padding: 2%; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"> 
                     </div>
 
-                    <div style="text-align: center; margin-top: 10px;">
+                    <div style="text-align: center; margin-bottom: 10px;">
                         <button onclick="moveSlide(-1)" style="background-color: darkblue; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">◀</button>
                         <button onclick="moveSlide(1)" style="background-color: darkblue; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">▶</button>
                     </div>
