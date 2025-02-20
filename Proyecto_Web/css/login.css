@@ -21,6 +21,8 @@ body {
 }
 
 .login-container img {
+  border: 2px solid #000;
+  border-radius: 100px; /* Redondea todos los bordes 10px */
   width: 80px;
   margin-bottom: 20px;
 }
