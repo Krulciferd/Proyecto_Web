@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1579370318443-332e1f829c7e') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.login-container img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container a {
+  color: #00bcd4;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.promo-box {
+  position: absolute;
+  right: 50px;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+}
