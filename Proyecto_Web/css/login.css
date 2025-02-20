@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: url('https://images.unsplash.com/photo-1579370318443-332e1f829c7e') no-repeat center center fixed;
   background-size: cover;
+  background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg);
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   height: 100vh;
   color: #fff;
@@ -17,6 +17,7 @@ body {
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  transform: translate(-250px);
 }
 
 .login-container img {
@@ -30,7 +31,7 @@ body {
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -64,4 +65,5 @@ body {
   border-radius: 10px;
   font-size: 24px;
   text-align: center;
+  transform: translate(-250px);
 }
