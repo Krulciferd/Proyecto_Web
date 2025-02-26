@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Orbitron', sans-serif;
   background-size: cover;
-  background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg);
+  background-image: url(/Proyecto_Web/Proyecto_Web/Imagenes/FondoLogin.jpg);
   display: flex;
   justify-content:center;
   align-items: center;

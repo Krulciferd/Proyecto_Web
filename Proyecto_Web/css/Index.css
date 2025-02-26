@@ -6,6 +6,9 @@
     list-style: none;
     font-family: sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     font-family:'Times New Roman', Times, serif;
@@ -22,7 +25,7 @@ img{
 }
 
 .header{
-    background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg);
+    background-image: url(/Proyecto_Web/Proyecto_Web/Imagenes/FondoLogin.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

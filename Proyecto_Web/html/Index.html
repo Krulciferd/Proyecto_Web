@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStock</title>
-    <link rel="stylesheet" href="/Proyecto_Web/css/Index.css">
+    <link rel="stylesheet" href="/Proyecto_Web/Proyecto_Web/css/Index.css">
 </head>
 <body>
     
-<header class="header">
+<header class="header" id="top">
 
 
     <div class="menu container">
         <a href="#" class="logo">GameStock</a>
         <input type="checkbox" id="menu"/>
         <label for="menu">
-            <img src="../Imagenes/Logo.jpg"  class="menu-icono" alt="menu">
+            <img src="/Proyecto_Web/Proyecto_Web/Imagenes/Logo.jpg"  class="menu-icono" alt="menu">
         </label>
         <nav class="navbar">
             <ul>
-                <li> <a href="#">Inicio</a></li>
+                <li> <a href="#top">Inicio</a></li>
                 <li> <a href="#">Categorias</a></li>
-                <li> <a href="#">Consolas</a></li>
-                <li> <a href="#">Encuentranos</a></li>
-                <li> <a href="#">Contactos</a></li>
-                <li> <a href="/Proyecto_Web/html/login.html">Usuario</a></li>
+                <li> <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html">Consolas</a></li>
+                <li> <a href="#ubicacion"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/ubicación.png" alt="" width="24px" height="24px"></a></li>
+                <li> <a href="#"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/telefono.png" alt="" width="24px" height="24px"></a></li>
+                <li> <a href="/Proyecto_Web/Proyecto_Web/html/login.html"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/Usuario.png" alt="" width="24px" height="24px"></a></li>
             </ul>
         </nav>
     </div>
@@ -36,8 +36,8 @@
                 Aqui podras encontrar los videos que prefieres y al mejor precio
             </p>
             <div class="butons">
-                <a href="/Proyecto_Web/html/Consolas.html" class="btn-1">Consolas</a>
-                <a href="#" class="btn-1">Juegos</a>
+                <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html" class="btn-1">Consolas</a>
+                <a href="#juegos" class="btn-1">Juegos</a>
             </div>
         </div>
     </div>
@@ -56,30 +56,154 @@
         <img src="../Imagenes/PlayStation Vita.jpg" alt="">
         <img src="../Imagenes/SEGA Genesis Mini.jpg" alt="">
         <img src="../Imagenes/Steam Deck.jpg" alt="">
-        <img src="../Imagenes/Super Nintendo Entertainment System (SNES) Classic Mini.jpg" alt="">
         <div class="btnc">
-            <a href="/Proyecto_Web/html/Consolas.html" class="btn-2">Comprar</a>
+            <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html" class="btn-2">Comprar</a>
 
         </div>
 
     </div>
 </section>
 
-<h2 class="titulo">Algunos de nuestros videojuegos</h2>
+<h2 class="titulo" id="juegos">Algunos de nuestros videojuegos</h2>
 
 
     <main class="product container">
 
-        
         <div class="card">
             <div class="face front">
-                <img src="/Proyecto_Web/Imagenes/Imagen1.png" alt="">
-                <h3>Carreras</h3>
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/BORDERLAND2.jpg" alt="">
+                <h3>Borderlands 2</h3>
                 </div>
                 <div class="face back">
-                <h3>Carreras</h3>
-                <p>Este juego se trata de carreas muy divertidas
-                    y emocinantes en todo sentido
+                <h3>Borderlands 2</h3>
+                <p>Borderlands 2 cuenta la historia de cuatro nuevos buscadores de la Cámara en su lucha por liberar Pandora de las garras de Jack el Guapo,
+                     el astuto, carismático y despreciable presidente de la corporación Hyperion.
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/CODWAR3.jpg" alt="">
+                <h3>COD: MODERN WARFARE 3 </h3>
+                </div>
+                <div class="face back">
+                <h3>COD: MODERN WARFARE 3</h3>
+                <p>Experimenta el combate clásico de Call of Duty, los vínculos de la camaradería y la naturaleza cruel de la guerra mientras luchas contra un poder tiránico global.
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/GODOFWAR.jpg" alt="">
+                <h3>GOD OF WAR RAGNAROK</h3>
+                </div>
+                <div class="face back">
+                <h3>GOD OF WAR RAGNAROK</h3>
+                <p>Kratos y Atreus se embarcan en una mítica aventura en busca de respuestas y aliados antes de la llegada del Ragnarök.
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/Mafia3.jpg" alt="">
+                <h3>MAFIA 3</h3>
+                </div>
+                <div class="face back">
+                <h3>MAFIA 3</h3>
+                <p>ras luchar en Vietnam, Lincoln Clay comprende que familia no son aquellos con los que naciste, sino aquellos por los que morirías.
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/MORTALKOMBAT2.jpg" alt="">
+                <h3>MORTAL KOMBAT 2</h3>
+                </div>
+                <div class="face back">
+                <h3>MORTAL KOMBAT 2</h3>
+                <p>es la segunda entrega y el segundo juego de la saga Mortal Kombat, lanzado en 1993 por Midway Games para la consola Arcade
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/POKEMON.jpg" alt="">
+                <h3>POKEMON XD</h3>
+                </div>
+                <div class="face back">
+                <h3>POKEMOS XD</h3>
+                <p>es el sucesor del título de GameCube Pokémon Colosseum y se desarrolla en Orre , el escenario del modo aventura de Pokémon Colosseum
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/RESIDENTEVIL.jpg" alt="">
+                <h3>RESIDENT EVIL REVELATIONS</h3>
+                </div>
+                <div class="face back">
+                <h3>RESIDENT EVIL REVELATIONS</h3>
+                <p>os agentes antiterroristas Jill Valentine y Chris Redfield mientras intentan descubrir la verdad detrás de una organización bioterrorista que planea infectar los océanos de la Tierra con un virus 
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/SMARIO64.jpg" alt="">
+                <h3>SUPER MARIO 64</h3>
+                </div>
+                <div class="face back">
+                <h3>SUPER MARIO 64</h3>
+                <p>Super Mario 64​ es un videojuego de plataformas de 1996 desarrollado y publicado por Nintendo para la consola Nintendo 64
                 </p>
                 <p>
                     $500
@@ -93,13 +217,12 @@
 
         <div class="card">
             <div class="face front">
-                <img src="/Proyecto_Web/Imagenes/Imagen2.png" alt="">
-                <h3>Carreras</h3>
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/CODBLACK2.jpg" alt="">
+                <h3>COD: BLACK OP 2</h3>
                 </div>
                 <div class="face back">
-                <h3>Carreras</h3>
-                <p>Este juego se trata de carreas muy divertidas
-                    y emocinantes en todo sentido
+                <h3>COD: BLACK OP 2</h3>
+                <p>es el primer juego de la serie que presenta tecnología de guerra futurista y el primero en presentar historias ramificadas impulsadas por la elección del jugador
                 </p>
                 <p>
                     $500
@@ -112,13 +235,12 @@
         </div>
         <div class="card">
             <div class="face front">
-                <img src="/Proyecto_Web/Imagenes/Imagen3.png" alt="">
-                <h3>Carreras</h3>
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/Metroid.jpg" alt="">
+                <h3>METROID PRIME</h3>
                 </div>
                 <div class="face back">
-                <h3>Carreras</h3>
-                <p>Este juego se trata de carreas muy divertidas
-                    y emocinantes en todo sentido
+                <h3>METROID PRIME</h3>
+                <p>videojuego de acción-aventura en primera persona con componentes de disparos y plataformas
                 </p>
                 <p>
                     $500
@@ -131,13 +253,48 @@
         </div>
         <div class="card">
             <div class="face front">
-                <img src="/Proyecto_Web/Imagenes/xboxx.jpg" alt="">
-                <h3>Carreras</h3>
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/dbz4.jpg" alt="">
+                <h3>DBZ: BUDOKAI TENKAICHI 4</h3>
                 </div>
                 <div class="face back">
-                <h3>Carreras</h3>
-                <p>Este juego se trata de carreas muy divertidas
-                    y emocinantes en todo sentido
+                <h3>DBZ: BUDOKAI TENKAICHI 4</h3>
+                <p>supera los límites de la jugabilidad y las características de cualquiera juego de peleas en arena
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/gtasa.jpg" alt="">
+                <h3>GTA: SAN ANDREAS</h3>
+                </div>
+                <div class="face back">
+                <h3>GTA: SAN ANDREAS</h3>
+                <p>Ambientado en 1992 e inspirado en las guerras de pandilleros estadounidenses
+                </p>
+                <p>
+                    $500
+                </p>
+                <div class="link">
+                    <a href="#" class="btn-2">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="/Proyecto_Web/Proyecto_Web/Imagenes/reddead.jpg" alt="">
+                <h3>RED DEAD REDEMPTION 2</h3>
+                </div>
+                <div class="face back">
+                <h3>RED DEAD REDEMPTION 2</h3>
+                <p> videojuego de acción-aventura de mundo abierto desarrollado y publicado por Rockstar Games
                 </p>
                 <p>
                     $500
@@ -163,18 +320,18 @@
 
     </section>
 
-    <footer class="footer container">
+    <footer class="footer container" id="ubicacion">
         <div class="link">
             <a href="#" class="logo">GameStock</a>
         </div>
 
         <div class="link">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#top">Inicio</a></li>
                 <li><a href="#">Categorias</a></li>
-                <li><a href="#">Consolas</a></li>
-                <li><a href="#">Encuentranos</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html">Consolas</a></li>
+                <li><a href="#ubicacion"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/ubicación.png" alt="" width="24px" height="24px"></a></li>
+                <li><a href="#"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/telefono.png" alt="" width="24px" height="24px"></a></li>
             </ul>
         </div>
         <div class="copy">
