@@ -7,43 +7,38 @@
     <link rel="stylesheet" href="/Proyecto_Web/Proyecto_Web/css/Index.css">
 </head>
 <body>
-    
-<header class="header" id="top">
-
-
-    <div class="menu container">
-        <a href="#" class="logo">GameStock</a>
-        <input type="checkbox" id="menu"/>
-        <label for="menu">
-            <img src="/Proyecto_Web/Proyecto_Web/Imagenes/Logo.jpg"  class="menu-icono" alt="menu">
-        </label>
-        <nav class="navbar">
-            <ul>
-                <li> <a href="#top">Inicio</a></li>
-                <li> <a href="#">Categorias</a></li>
-                <li> <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html">Consolas</a></li>
-                <li> <a href="#ubicacion"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/ubicación.png" alt="" width="24px" height="24px"></a></li>
-                <li> <a href="#"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/telefono.png" alt="" width="24px" height="24px"></a></li>
-                <li> <a href="/Proyecto_Web/Proyecto_Web/html/login.html"><img src="/Proyecto_Web/Proyecto_Web/Imagenes/Usuario.png" alt="" width="24px" height="24px"></a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>Compra aqui tus<span> videojuegos</span> <br>favoritos</h1>
-            <p>
-                Aqui podras encontrar los videos que prefieres y al mejor precio
-            </p>
-            <div class="butons">
-                <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html" class="btn-1">Consolas</a>
-                <a href="#juegos" class="btn-1">Juegos</a>
-            </div>
+    <header class="header">
+        <div class="logo">
+            <img src="../Imagenes/Logo.jpg" alt="menu">
         </div>
-    </div>
-
+        <nav class="navbar">
+                <a href="Index.html" target="_blank">Inicio</a>
+                <a href="#">Categorias</a>
+                <a href="Consolas.html" target="_blank">Consolas</a>
+                <a href="#">
+                    <img src="../Imagenes/ubicación.png" alt="ubicacion" width="24" height="24">
+                </a>
+                <a href="#">
+                    <img src="../Imagenes/telefono.png" alt="telefono" width="24" height="24">
+                </a>
+                <a href="/Proyecto_Web/Proyecto_Web/html/login.html">
+                    <img src="../Imagenes/Usuario.png" alt="usuario" width="24" height="24"> 
+                </a>
+        </nav>
+    </header>
+<div class="header-content container">
+    <div class="header-txt">
+        <h1>Compra aqui tus<span> videojuegos</span> <br>favoritos</h1>
+        <p>
+            Aqui podras encontrar los videos que prefieres y al mejor precio
+        </p>
+        <div class="butons">
+            <a href="/Proyecto_Web/Proyecto_Web/html/Consolas.html" class="btn-1">Consolas</a>
+            <a href="#juegos" class="btn-1">Juegos</a>
+        </div>
     
-</header>
+    </div>
+</div>
 
 <section class="popular container">
     <h2>Algunas de nuestas consolas</h2>
@@ -310,7 +305,7 @@
 
     <section class="contact container">
         <div class="contact-content">
-            <h3> Suscribete a nuestro blog</h3>
+            <h3> Recibe notificaciones</h3>
             <form>
                 <input type="email" placeholder="Escribe tu correo">
                 <input type="submit" class="btn-3" value="Enviar">

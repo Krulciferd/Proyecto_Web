@@ -25,23 +25,46 @@ img{
 }
 
 .header{
-    background-image: url(/Proyecto_Web/Proyecto_Web/Imagenes/FondoLogin.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    align-items: center;
-    min-height: 80vh;
-    padding: 80px 0;
-}
-.menu{
-    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 30, 255, 0.2);
+    justify-content:space-between;
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
     top: 0;
-    left: 0;
-    right: 0;
+}
+.logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.navbar {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+}
+.navbar a:hover{
+    color: blue;
 }
 
 .logo{
@@ -84,11 +107,14 @@ img{
 
 .header-content{
     display: flex;
-
+    margin-top: 100px;
+    width: 90%;
+    background-image: url(/Proyecto_Web/Proyecto_Web/Imagenes/FondoLogin.jpg);
 }
 
 .header-txt{
-    flex-basis: 50%;
+    text-align: center;
+    width: 100%;
 }
 .header-txt h1{
     font-size: 60px;
@@ -181,7 +207,7 @@ main{
 .card{
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 400px;
     top: -10px;
     left: -10px;
 
