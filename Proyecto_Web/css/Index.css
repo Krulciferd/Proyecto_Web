@@ -194,6 +194,63 @@ h2{
     padding: 25px;
 }
 
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 33.33%;
+    flex-shrink: 0;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dots span {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots span.active {
+    background-color: black;
+}
+
+
+
 main{
     display: flex;
     align-items: center;
