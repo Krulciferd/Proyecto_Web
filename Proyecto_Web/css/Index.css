@@ -150,42 +150,9 @@ img{
     background-color: #FF5A2C;
 }
 
-.popular{
-    padding: 100px 0;
-    text-align: center;
-}
 
-h2{
-    color: #ffffff;
-    font-size: 35px;
-    margin-bottom: 45px;
-    text-align: center;
-}
 
-.popular-content{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
 
-}
-
-.popular-content img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    justify-content: center;
-    flex: 0 1 150px;
-
-}
-
-.btnc{
-    width: 100%;
-    text-align: center;
-    margin-top: 20px; 
-    
-}
 .titulo {
     text-align: center;
     font-size: 24px;
@@ -193,62 +160,6 @@ h2{
     margin-bottom: 20px;
     padding: 25px;
 }
-
-
-.carousel-container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 33.33%;
-    flex-shrink: 0;
-}
-
-.buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.buttons button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dots {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.dots span {
-    height: 10px;
-    width: 10px;
-    margin: 5px;
-    background-color: gray;
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dots span.active {
-    background-color: black;
-}
-
 
 
 main{
