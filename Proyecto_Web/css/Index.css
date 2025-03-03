@@ -149,6 +149,7 @@ img{
 .btn-1:hover{
     background-color: #FF5A2C;
 }
+/* INICIA CARRUSEL */
 
 .container1{
     position: relative;
@@ -235,6 +236,7 @@ img{
     left: -200vw;
 }
 
+/* TERMINA CARRUSEL*/
 .titulo {
     text-align: center;
     font-size: 24px;
