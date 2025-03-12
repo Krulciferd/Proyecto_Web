@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStock</title>
+    <!-- Enlace al archivo CSS local y a la biblioteca de Font Awesome para íconos -->
     <link rel="stylesheet" href="/Proyecto_Web/css/Index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+    <!-- Encabezado principal de la página -->
     <header class="header">
         <div class="logo">
+             <!-- Logo del sitio web -->
             <img src="../Imagenes/Logo.jpg" alt="menu">
         </div>
         <nav class="navbar">
+             <!-- Barra de navegación con enlaces principales -->
                 <a href="Index.html" target="_blank">Inicio</a>
                 <a href="#">Categorias</a>
                 <a href="Consolas.html" target="_blank">Consolas</a>
                 <a href="#ubi">
+                     <!-- Ícono de ubicación -->
                     <img src="../Imagenes/ubicación.png" alt="ubicacion" width="24" height="24">
                 </a>
                 <a href="#conttt">
+                    <!-- Ícono de teléfono -->
                     <img src="../Imagenes/telefono.png" alt="telefono" width="24" height="24">
                 </a>
                 <a href="/Proyecto_Web/html/login.html">
+                    <!-- Ícono de usuario -->
                     <img src="../Imagenes/Usuario.png" alt="usuario" width="24" height="24"> 
                 </a>
         </nav>
     </header>
+     <!-- Sección principal con contenido destacado -->
 <div class="header-content container" id="servi">
     <div class="header-txt">
         <h1>Compra aqui tus<span> videojuegos</span> <br>favoritos</h1>
         <p>
             Aqui podras encontrar los videos que prefieres y al mejor precio
         </p>
+         <!-- Botones para navegar a otras secciones o páginas -->
         <div class="butons">
             <a href="/Proyecto_Web/html/Consolas.html" class="btn-1">Consolas</a>
             <a href="#juegos" class="btn-1">Juegos</a>
@@ -44,7 +53,7 @@
 <!-- INICIA CARRUSEL-->
 <div class="container1">
     <div class="slider">
-
+        <!-- Controles del carrusel -->
         <input type="radio" name="slider" id="slideOne" checked>
         <input type="radio" name="slider" id="slideTwo">
         <input type="radio" name="slider" id="slideThree">
@@ -56,6 +65,7 @@
 
         </div>
 
+         <!-- Imágenes del carrusel -->
         <div class="content">
             <div class="firstslide"><img src="/Proyecto_Web/Imagenes/xboxos.jpg" alt="ps4"></div>
             <div class="secondslide"><img src="/Proyecto_Web/Imagenes/playos.jpg" alt="gbasp"></div>
@@ -68,12 +78,12 @@
 
 <!-- TERMINA CARRUSEL-->
 
-
+<!-- Título de la sección de videojuegos -->
 <h2 class="titulo" id="juegos">Algunos de nuestros videojuegos</h2>
 
-
+    <!-- INICIA GALERÍA DE PRODUCTOS -->
     <main class="product container">
-
+     <!-- Cada producto es una tarjeta interactiva con cara frontal y trasera -->
         <div class="card">
             <div class="face front">
                 <img src="/Proyecto_Web/Imagenes/BORDERLAND2.jpg" alt="">
@@ -89,10 +99,10 @@
                 </p>
                 <div class="link">
                     <a href="#" class="btn-2">Comprar</a>
-
                 </div>
             </div>
         </div>
+        <!-- Repite estructura para otros videojuegos -->
         <div class="card">
             <div class="face front">
                 <img src="/Proyecto_Web/Imagenes/CODWAR3.jpg" alt="">
@@ -306,27 +316,27 @@
                 </p>
                 <div class="link">
                     <a href="#" class="btn-2">Comprar</a>
-
                 </div>
             </div>
         </div>
     </main>
     <br>
+    <!-- FIN DE LA GALERÍA DE PRODUCTOS -->
     <hr>
-
     </section>
 
+<!-- Sección de contacto -->
     <div class="foo" id="ubi">
         <!-- Nuevo contenedor para el video y el mapa -->
         <div class="video-mapa">
+            <!-- Video de presentación -->
             <video width="800" height="450" controls>
                 <source src="/Proyecto_Web/Imagenes/Video juego.mp4">
             </video>
-    
+            <!-- Mapa embebido de Google Maps -->
             <iframe src="https://www.google.com/maps/embed?pb=!4v1741561499358!6m8!1m7!1sVYRCerlkmMD9zHgZkSixnA!2m2!1d4.616981914551937!2d-74.0715251179744!3f206.3530727587683!4f39.28566135972861!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    
-        <!-- Nuevo contenedor para los textos -->
+        <!-- Información de contacto -->
         <div class="textos" id="conttt">
             <h3>Email: GameStock@gmail.com</h3>
             <h3>Teléfonos: +(57) 3205869457 / (601) 7315849</h3>
@@ -335,27 +345,25 @@
     <br>
     <br>
 <hr>
+<!-- Pie de página -->
     <footer class="footer">
         <div class="container3">
             <div class="footer-row">
+                <!-- Enlaces rápidos -->
                 <div class="footer-links">
                     <h4>Compañia</h4>
                     <ul>
                         <li><a href="#">Sobre nosotros</a></li>
                         <li><a href="#servi">Servicios</a></li>
                     </ul>
-        
                 </div>
-        
                 <div class="footer-links">
                     <h4>Contactos</h4>
                     <ul>
                         <li><a href="#ubi">Ubicación</a></li>
                         <li><a href="#conttt">Habla con nosotros</a></li>
                     </ul>
-        
                 </div>
-        
                 <div class="footer-links">
                     <h4>Productos</h4>
                     <ul>
@@ -363,10 +371,10 @@
                         <li><a href="#juegos">Videojuegos</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-links">
                     <h4>Siguenos</h4>
                     <div class="social-link">
+                         <!-- Íconos de redes sociales -->
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -376,14 +384,11 @@
                 </div>
             </div>
         </div>
-
         <div class="copy">
             <p>
                 &copy; 2025 GameStock. Todos los derechos reservados
             </p>
-
         </div>
     </footer>
-
 </body>
 </html>
