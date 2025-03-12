@@ -1,71 +1,74 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-size: cover;
-  background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg);
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  height: 100vh;
-  color: #fff;
+  margin: 0;  /*asigna una margen de 0 al cuerpo*/
+  padding: 0; /*asigna un padding de 0 al cuerpo*/
+  font-family: 'Orbitron', sans-serif;  /*se asgina la fuente de letra que se usara*/
+  background-size: cover;  /*define el tamañao de la imagen del fondo*/
+  background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg); /*da la imagen que estara en el fondo */
+  display: flex;  /*display flex para permitir organizar los elementos de una forma mas libre*/
+  justify-content:center; /* justificar contenido*/
+  align-items: center; /*alinear los elementos en el centro */
+  height: 100vh; /*altura del elemento a la ventana del navegador*/
+  color: #fff;  /*color de la etra*/
 }
 
-.login-container {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 300px;
-  transform: translate(-250px);
+.login-container {   /*llama al contenedor del login*/
+  background: rgba(0, 0, 0, 0.7);  /*asigna un fondo al contenedor*/
+  padding: 20px;  /*da un espacio al contenedor*/
+  border-radius: 10px; /*hacer que los bordes sean redondeados*/
+  text-align: center; /*alinea el texto al centro */
+  width: 300px; /*da un ancho fijo de 300px*/
+  transform: translate(-250px); /*permite mover un elemento desde su posición original sin afectar el flujo del diseño.*/
 }
 
-.login-container img {
-  border: 2px solid #000;
+.login-container img {  /*contenedor de imagen para modificarla*/
+  border: 2px solid #000; /*modifica el color y px del borde de la imagen*/
   border-radius: 100px; /* Redondea todos los bordes 10px */
-  width: 80px;
-  margin-bottom: 20px;
+  width: 80px; /*ancho fijo de la imagen*/
+  margin-bottom: 20px; /*margen en la parte inferior del elemento para crear un espacio*/
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
+.login-container h2 { /*llamna al texto h2 del contenedor*/
+  margin-bottom: 20px; /*margen en la parte inferior del elemento para crear un espacio*/
 }
 
 .login-container input[type="text"],
-.login-container input[type="password"] {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+.login-container input[type="password"] {  /* llama los input para modificarlos*/
+  width: 90%; /*ancho fijo de los elementos*/
+  padding: 10px; /* espacio interno por todos los lados*/
+  margin: 10px 0; /*margen exterior, arriba y abajo, izquierda y derecha*/
+  border: none; /*no crea ningun borde*/
+  border-radius: 5px; /*forma redonda al elemnento*/
 }
 
 .login-container button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #00bcd4;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+  width: 100%;          /*el botón ocupa el % del ancho del contenedor */
+  padding: 10px;        /*espaciado interno de 10px*/
+  border: none;         /*borra el borde predeterminado del botón */
+  border-radius: 5px;   /*bordes redondeados*/
+  background-color: #00bcd4; /*color de fondo*/
+  color: white;         /*color del texto en blanco */
+  font-size: 16px;      /*tamaño del texto*/
+  cursor: pointer;      /*convierte el cursor en una mano al pasar sobre el botón */
 }
+
 
 .login-container a {
-  color: #00bcd4;
-  text-decoration: none;
-  display: block;
-  margin-top: 10px;
+  color: #00bcd4;   /*color del texto*/
+  text-decoration: none; /*elimina el subrayado del enlace*/
+  display: block;        /*convierte el enlace en un bloque para que ocupe el ancho disponible*/
+  margin-top: 10px;      /*agrega un espacio de 10px arriba*/
 }
 
+
 .promo-box {
-  position: absolute;
-  right: 50px;
-  max-width: 400px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 24px;
-  text-align: center;
-  transform: translate(-250px);
+  position: absolute;  /*posiciona el elemento de manera absoluta */
+  right: 50px;     /*lo coloca 50px desde el borde derecho del contenedor principal */
+  max-width: 400px;   /*limita el ancho del elemento a 400px */
+  background: rgba(0, 0, 0, 0.7); /*fondo negro*/
+  padding: 20px;     /*espaciado interno de 20px */
+  border-radius: 10px;  /*bordes redondeados*/
+  font-size: 24px;      /*tamaño del texto*/
+  text-align: center;   /*centra el texto dentro del contenedor */
+  transform: translate(-250px); /*mueve el elemento 250px hacia la izquierda */
 }
+
