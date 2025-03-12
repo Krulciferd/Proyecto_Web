@@ -105,16 +105,25 @@ img{
 
 }
 
-.header-content{
+.header-content {
     display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     margin-top: 100px;
-    width: 90%;
+    width: 2000px; /* Mantener el ancho en 100% */
+    min-height: 500px;
     background-image: url(/Proyecto_Web/Imagenes/FondoLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
 }
-
 .header-txt{
     text-align: center;
     width: 100%;
+    
 }
 .header-txt h1{
     font-size: 60px;
@@ -126,7 +135,7 @@ img{
     color: #FF5A2C;
 }
 .header-txt p{
-    font-size: 17px;
+    font-size: 25px;
     color: #E0E0E0;
     margin-bottom: 25px;
 
@@ -138,43 +147,57 @@ img{
 
 .btn-1, .btn-2, .btn-3 {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border: 2px solid #FF5A2C;
     border-radius: 12px;
     margin-right: 25px;
-    font-size: 17px;
+    font-size: 25px;
     color: #ffffff;
 }
 
 .btn-1:hover{
     background-color: #FF5A2C;
 }
-/* INICIA CARRUSEL */
 
-.container1{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+
+.carruco{    /* TITULO ANTES DE CARRUSEL*/
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-top: 50px;
+
 }
 
-.slider input{
+/* INICIA CARRUSEL*/
+.container1 {
+    position: relative;
+    width: 60%;
+    height: 400px; /* Mantener un tamaño fijo */
+    background-color: #1b1726;
+    padding-top: 20px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px; /* Bordes redondeados en todo el carrusel */
+}
+
+.slider input {
     visibility: hidden;
     display: none;
 }
 
-.buttons{
+.buttons {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 50px;
+    bottom: 10px;
     gap: 10px;
 }
 
-.buttons label{
-    width: 20px;
-    height: 20px;
+.buttons label {
+    width: 15px;
+    height: 15px;
     background-color: white;
     opacity: 0.5;
     cursor: pointer;
@@ -183,70 +206,84 @@ img{
     border-radius: 50px;
 }
 
-.buttons label:hover{
+.buttons label:hover {
     scale: 1.2;
     opacity: 1;
 }
 
 .slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
 .slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
-{
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3) {
     opacity: 1;
-    scroll-margin: 1.2;
-    width: 40px;
+    width: 30px;
 }
 
-.content{
+.content {
     position: relative;
-    width: 300vw;
+    width: 300%;
     display: flex;
     transition: 400ms ease-in-out;
 }
 
-.firstslide,.secondslide,.thirdslide{
+/* Estilos de cada slide */
+.firstslide, .secondslide, .thirdslide {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px; /* Bordes redondeados en cada slide */
+    overflow: hidden; /* Evita que imágenes sobresalgan */
 }
 
-.firstslide{
+.firstslide {
     background-color: aquamarine;
 }
 
-.secondslide{
+.secondslide {
     background-color: brown;
 }
 
-.thirdslide{
+.thirdslide {
     background-color: green;
 }
 
-.slider input:nth-child(1):checked ~ .content{
+/* Ajustar imágenes */
+.firstslide img, 
+.secondslide img, 
+.thirdslide img {
+    width: 100%; /* Que la imagen llene el contenedor */
+    height: 100%; /* Mantener la altura fija */
+    object-fit: cover; /* Mantener proporción y cubrir todo el espacio */
+}
+
+/* Mantener tamaño al cambiar de slide */
+.slider input:nth-child(1):checked ~ .content {
     left: 0;
 }
 
-.slider input:nth-child(2):checked ~ .content{
-    left: -100vw;
-}
-.slider input:nth-child(3):checked ~ .content{
-    left: -200vw;
+.slider input:nth-child(2):checked ~ .content {
+    left: -100%;
 }
 
-/* TERMINA CARRUSEL*/
+.slider input:nth-child(3):checked ~ .content {
+    left: -200%;
+}
+/*TERMINA CARRUSEL*/
+
+/* OTRA SECCIÓN */
 .titulo {
     text-align: center;
     font-size: 24px;
     color: #ffffff;
     margin-bottom: 20px;
-    padding: 25px;
+    padding-top: 50px;
+    padding:50px;
 }
 
 
-main{
+main{   /*CONTIENE TODAS LAS CARTAS*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,6 +293,7 @@ main{
     flex-wrap: wrap;
     max-width: 960px;
 }
+
 .card{
     position: relative;
     width: 300px;
@@ -266,7 +304,7 @@ main{
 
 }
 
-.card .face{
+.card .face{  /*FRONTAL CARTA*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -275,19 +313,19 @@ main{
     overflow: hidden;
     transition: .5s;
 }
-.card .front{
+.card .front{  /*ANIMACIPON CARTA*/
     transform: perspective(600px) rotateX(0deg);
     box-shadow: 0 5px 10px #000;
 }
 
-.card .front img{
+.card .front img{  /*IMAGEN DE LA CARTA*/
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card .front h3{
+.card .front h3{   /*TEXTo DE CARTAS*/
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -298,7 +336,7 @@ main{
     text-align: center;
 }
 
-.card .back {
+.card .back {   /*ESPLADA DE CARTA*/
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
     padding: 15px;
@@ -310,7 +348,7 @@ main{
     box-shadow: 0 5px 10px #000;
 }
 
-.card .back .link{
+.card .back .link{ 
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
@@ -358,30 +396,6 @@ main{
     color: white;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-}
-
-input{
-    padding: 18px 25px;
-    background-color: #3f3456;
-    border: 0;
-    border-radius: 25px;
-    outline: none;
-    margin-right: 10px;
-    color: #ffffff;
-    font-size: 17px;
-
-}
-
-::placeholder{
-    color: #E0E0E0;
-    font-size: 17px;
-
-}
 
 .btn-3{
     background-color: #FF5A2C;
@@ -389,15 +403,6 @@ input{
     margin-right: 0;
 }
 
-/*
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0;
-    gap: 15px;
-    flex-direction: column;
-}*/
 
 .link ul{
     display: flex;
@@ -421,11 +426,45 @@ input{
     text-align: center;
 }
 
-.foo{
+.foo {
     display: flex;
-    gap: 100px;
-    justify-content: center;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos */
+    gap: 20px;
     padding-top: 50px;
+}
+
+/* Nueva clase para alinear el video y el mapa */
+.video-mapa {
+    display: flex;
+    gap: 50px; /* Espacio entre el video y el mapa */
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+}
+
+.video-mapa video,
+.video-mapa iframe {
+    max-width: 100%; /* Evita que se desborden */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para los textos */
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #00c3ff;
+    border-radius: 15px;
+}
+
+.textos h3 {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif; /* Usa una fuente llamativa */
+    text-align: center;
+    width: fit-content;
 }
 
 .container3{
