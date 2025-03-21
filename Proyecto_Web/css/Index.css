@@ -169,6 +169,37 @@ img{
 
 }
 
+
+/* Centrar el carrusel en la página */
+.carousel222 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta el alto del contenedor */
+}
+/*NUEVO CARRUSEL BOOSTRAP*/
+.container6 {
+    width: 100%; /* Ancho del contenedor */
+}
+
+.carousel {
+    width: 100%; /* Ancho del carrusel */
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: left; /* Centra el contenido del carrusel */
+}
+
+.carousel-inner img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+    height: 80vh; /* Las imágenes ocupan el 80% de la altura de la ventana */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+    border-radius: 25px; /* Bordes redondos */
+}
+
+/*TERMINA CARRUSEL NUEVO */
+
 /* INICIA CARRUSEL*/
 .container1 {
     position: relative;
