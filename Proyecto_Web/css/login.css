@@ -62,7 +62,7 @@ body {
 
 .promo-box {
   position: absolute;  /*posiciona el elemento de manera absoluta */
-  right: 50px;     /*lo coloca 50px desde el borde derecho del contenedor principal */
+  right: -225px;     /*lo coloca 50px desde el borde derecho del contenedor principal */
   max-width: 400px;   /*limita el ancho del elemento a 400px */
   background: rgba(0, 0, 0, 0.7); /*fondo negro*/
   padding: 20px;     /*espaciado interno de 20px */
@@ -70,5 +70,28 @@ body {
   font-size: 24px;      /*tamaño del texto*/
   text-align: center;   /*centra el texto dentro del contenedor */
   transform: translate(-250px); /*mueve el elemento 250px hacia la izquierda */
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-position: center;
+  }
+
+  .login-container, .promo-box {
+    width: 90%;
+    max-width: 400px;
+    transform: none;
+    margin: 10px 0;
+    position: static;
+  }
+
+  .promo-box {
+    order: -1; /* Poner el mensaje encima del formulario */
+    text-align: center;
+  }
 }
 
