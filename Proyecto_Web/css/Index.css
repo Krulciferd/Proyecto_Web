@@ -49,6 +49,7 @@ img{
     width: 70px;
     height: auto;
     border-radius: 50%;
+    background-origin: padding-box;
 }
 .navbar {
     padding: 10px;
